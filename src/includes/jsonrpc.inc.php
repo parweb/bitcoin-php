@@ -6,7 +6,7 @@
  * http://www.json.org/
  * http://json-rpc.org/
  *
- * @version $Id: jsonrpc.inc,v 1.36 2009/02/05 09:50:59 ggiunta Exp $
+ * @version $Id: jsonrpc.inc.php,v 1.36 2009/02/05 09:50:59 ggiunta Exp $
  * @author Gaetano Giunta
  * @copyright (c) 2005-2009 G. Giunta
  * @license code licensed under the BSD License: http://phpxmlrpc.sourceforge.net/license.txt
@@ -16,7 +16,7 @@
  *       do not otuput an 'accept' header or specify  'any' (in curl mode)
  **/
 
-	// requires: xmlrpc.inc 2.0 or later
+	// requires: xmlrpc.inc.php 2.0 or later
 
 	// Note: the json spec omits \v, but it is present in ECMA-262, so we allow it
 	$GLOBALS['ecma262_entities'] = array(

@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__) . '/../bitcoin.inc';
+require_once dirname(__FILE__) . '/../bitcoin.inc.php';
 
 /**
  * Test class for Bitcoin.

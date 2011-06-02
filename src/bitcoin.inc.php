@@ -242,8 +242,8 @@ class BitcoinClientException extends ErrorException {
   }
 }
 
-require_once(dirname(__FILE__) . "/includes/xmlrpc.inc");
-require_once(dirname(__FILE__) . "/includes/jsonrpc.inc");
+require_once(dirname(__FILE__) . "/includes/xmlrpc.inc.php");
+require_once(dirname(__FILE__) . "/includes/jsonrpc.inc.php");
 
 /**
  * Bitcoin client class for access to a Bitcoin server via JSON-RPC-HTTP[S]
@@ -332,7 +332,7 @@ class BitcoinClient extends jsonrpc_client {
    * @todo Make this method private.
    */
   public function query_arg_to_parameter($argument) {
-    $type = "";// "string" is encoded as this default type value in xmlrpc.inc
+    $type = "";// "string" is encoded as this default type value in xmlrpc.inc.php
     if (is_numeric($argument)) {
       if (intval($argument) != floatval($argument)) {
         $argument = floatval($argument);
@@ -363,7 +363,7 @@ class BitcoinClient extends jsonrpc_client {
    * @param mixed $args, ...
    * @return mixed
    * @throws BitcoinClientException
-   * @see xmlrpc.inc:php_xmlrpc_decode()
+   * @see xmlrpc.inc.php:php_xmlrpc_decode()
    */
   public function query($message) {
     if (!$message || empty($message))

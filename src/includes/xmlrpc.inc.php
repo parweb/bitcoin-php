@@ -1,7 +1,7 @@
 <?php
 // by Edd Dumbill (C) 1999-2002
 // <edd@usefulinc.com>
-// $Id: xmlrpc.inc,v 1.174 2009/03/16 19:36:38 ggiunta Exp $
+// $Id: xmlrpc.inc.php,v 1.174 2009/03/16 19:36:38 ggiunta Exp $
 
 // Copyright (c) 1999,2000,2002 Edd Dumbill.
 // All rights reserved.
@@ -46,7 +46,7 @@
 	}
 
 	// G. Giunta 2005/01/29: declare global these variables,
-	// so that xmlrpc.inc will work even if included from within a function
+	// so that xmlrpc.inc.php will work even if included from within a function
 	// Milosch: 2005/08/07 - explicitly request these via $GLOBALS where used.
 	$GLOBALS['xmlrpcI4']='i4';
 	$GLOBALS['xmlrpcInt']='int';
